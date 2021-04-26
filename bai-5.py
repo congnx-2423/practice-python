@@ -3,12 +3,12 @@ n = int(input('Enter size of list:'))
 for i in range(0, n):
     name = input('Title: ')
     quantity = int(input('Quantity: '))
-    dict = {
+    prod = {
         'title': name,
         'quantity': quantity
     }
 
-    listProds.append(dict)
+    listProds.append(prod)
 
 key = input('Search: ')
 result = [i for i in listProds if i['title'] == key]
@@ -21,3 +21,4 @@ if (result):
     print(f"{quantity} items available")
 else:
     print('Out of stock!')
+
